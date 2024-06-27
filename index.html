@@ -19,7 +19,46 @@
     <div class="background-image">
       <div class="content">
         <img src="cruz.png" alt="">
+        <!-- <img src="cruz.png" alt=""> -->
         <h1>¡Acompañanos a celebrar!</h1>
+
+
+
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+
+        <audio id="background-music" autoplay loop>
+          <source src="AUGUST RUSH - Augusts Rhapsody.mp3" type="audio/mpeg">
+         
+      </audio>
+  <!-- Botón de reproducción -->
+   <div id="audio-player">
+  <span  id="play-button"><img class="little-icon" src="boton-de-play.png"></span>
+</div>
+  <!-- Script para manejar la reproducción de música -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const audio = document.getElementById('background-music');
+          const playButton = document.getElementById('play-button');
+  
+          // Intenta reproducir automáticamente
+          audio.play().catch(() => {
+              // Si el navegador bloquea la reproducción automática, muestra el botón
+              playButton.style.display = 'block';
+              
+          });
+  
+          // Maneja el clic en el botón de reproducción
+          playButton.addEventListener('click', function() {
+            
+              audio.play();
+              
+             /*  playButton.style.display = 'none'; */ 
+              // Oculta el botón después de hacer clic
+          });
+      });
+  </script>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
         <h2>Mi primera comunion.</h2>
         <div>
           <h2>Y</h2>
@@ -861,32 +900,6 @@
             erá%20un%20honor%20acompañarlos%20en%20esta%20ocasión%20tan%20especial.  -->
       </section>
 
-
-      <audio id="background-music" autoplay loop>
-        <source src="AUGUST RUSH - Augusts Rhapsody.mp3" type="audio/mpeg">
-       
-    </audio>
-
-    <!-- Script para iniciar la música -->
-   <!--  <script>
-        window.addEventListener('load', function() {
-            const audio = document.getElementById('background-music');
-            audio.play();
-        });
-    </script> -->
-
-
-
-
-
-    <!-- <audio autoplay loop>
-      <source src="AUGUST RUSH - Augusts Rhapsody.mp3" type="audio/mpeg" />
-    </audio> -->
-   <!--  <audio
-    id="audio"
-    controls
-    src="AUGUST RUSH - Augusts Rhapsody.mp3"
-  ></audio> -->
 
     <script src="script.js"></script>
   </body>

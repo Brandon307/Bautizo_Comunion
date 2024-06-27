@@ -4,6 +4,12 @@
     
 }
 
+.little-icon {
+    padding: 0.07rem;
+    height: 1.7rem;
+    width: auto;
+}
+
 h1
 {
     margin: 0.5rem;
@@ -76,6 +82,27 @@ img {
     width: 70%;
     height: auto;
     border-radius: 0.5rem;
+}
+
+
+#audio {
+    display: none;
+}
+
+#audio-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border-top: 1px solid var(--accent-normal);
+}
+
+.play {
+    background-color: var(--accent-light);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .background-image {
